@@ -204,7 +204,7 @@ $datos = getDatosPacienteEnCama2014_2($_GET['id_cama']);
 $datos_cama = getDatosCama($_GET['id_cama']);
 $datos["cama_descripcion"] = $datos_cama["descripcion"];
 
-
+   
 if ($_GET['tipo'] == 'ultima') {
 	$ordenes = getUltimasOrdenes($_GET['id_cama'], $_GET["id_derecho"], $datos["id_medico"], $datos["id_servicio"], $_GET["fecha"]);
 }
